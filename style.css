@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+.page-wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.my-header{
+    background-color: #FFFFFF;
+    height: 68px;
+    width: 100%;
+    color: #111111;
+    font-size: 17px;
+    padding: 0.7rem 2.5%;
+    
+}
+a{
+    text-decoration: none;
+}
+.nav__logo{
+    color: #343a40;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.nav__logo-text{
+    font-family: 'Montserrat',sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+   
+}
+.nav__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    list-style: none;
+    padding: 1px;
+    gap: 2rem;
+}
+.nav__links a {
+    color: #555555;
+    font-size: 15px;
+}
+.nav__links li a{
+    position: relative;
+    text-decoration: none;
+}
+.nav__links li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #555555;
+    transition: width 0.2s ease;
+}
+.nav__links li a:hover::after{
+    width: 100%;
+}
+.navbar-btn{
+    background-color: #495057;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Inter" , Roboto,sans-serif;
+    padding: 9px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 100px;
+}
+.navbar-btn:hover{
+   transform:  scale(1.05);
+   transition: ease-in 0.2s;
+}
