@@ -2075,11 +2075,33 @@ footer {
     }
 
     /* 🔹 FOOTER FIX */
-    .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+    /* 🔹 FOOTER FIX */
+.footer-inner {
+    flex-direction: column;
+    align-items: center;       /* ✅ fixed */
+    text-align: center;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.footer-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+}
 }
 
 @media (max-width: 768px) {
