@@ -1778,6 +1778,11 @@ footer {
     font-size: 12px;
     color: #aaa;
 }
+.footer-copy-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .footer-links {
     display: flex;
